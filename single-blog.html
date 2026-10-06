@@ -1,579 +1,618 @@
 <!doctype html>
 <html lang="zxx">
-  <head>
-    <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Awaiken" />
-    <!-- Page Title -->
-    <title>Proventa Pharma - Single Blog</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo2.png" />
-    <!-- Google Fonts Css-->
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <!-- SlickNav Css -->
-    <link href="css/slicknav.min.css" rel="stylesheet" />
-    <!-- Swiper Css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- Font Awesome Icon Css-->
-    <link href="css/all.min.css" rel="stylesheet" media="screen" />
-    <!-- Animated Css -->
-    <link href="css/animate.css" rel="stylesheet" />
-    <!-- Magnific Popup Core Css File -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <!-- Mouse Cursor Css File -->
-    <link rel="stylesheet" href="css/mousecursor.css" />
-    <!-- Main Custom Css -->
-    <link href="css/custom.css" rel="stylesheet" media="screen" />
-  </head>
-  <body>
-    <!-- Preloader Start -->
-    <div class="preloader">
-      <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/logo2.png" alt="" /></div>
-      </div>
-    </div>
-    <!-- Preloader End -->
 
-    <!-- Topbar Section Start -->
-    <div class="topbar">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-9">
-            <!-- Topbar Contact Information Start -->
-            <div class="topbar-contact-info">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Awaiken" />
+  <!-- Page Title -->
+  <title>Proventa Pharma - Single Blog</title>
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo2.png" />
+  <!-- Google Fonts Css-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <!-- SlickNav Css -->
+  <link href="css/slicknav.min.css" rel="stylesheet" />
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- Font Awesome Icon Css-->
+  <link href="css/all.min.css" rel="stylesheet" media="screen" />
+  <!-- Animated Css -->
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Magnific Popup Core Css File -->
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <!-- Mouse Cursor Css File -->
+  <link rel="stylesheet" href="css/mousecursor.css" />
+  <!-- Main Custom Css -->
+  <link href="css/custom.css" rel="stylesheet" media="screen" />
+  <!-- Single Blog Images Column Css -->
+  <style>
+    .blog-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .blog-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .blog-gallery a {
+      display: block;
+      width: calc(33.333% - 14px);
+      height: 280px;
+      overflow: hidden;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .blog-gallery img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-gallery a:hover img {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 991px) {
+      .blog-sidebar {
+        position: static;
+        margin-top: 40px;
+      }
+
+      .blog-gallery a {
+        width: calc(50% - 10px);
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .blog-gallery a {
+        width: 100%;
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon"><img src="images/logo2.png" alt="" /></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Topbar Section Start -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-9">
+          <!-- Topbar Contact Information Start -->
+          <div class="topbar-contact-info">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-clock"></i>
+                  <span>Working Hour:</span> 09:30am to 06:30pm</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-envelope"></i>
+                  <span>Email:</span> shakeel@provantapharma.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Topbar Contact Information End -->
+        </div>
+
+        <div class="col-lg-6 col-md-3">
+          <!-- Topbar Social Details Start -->
+          <div class="topbar-social-details">
+            <!-- Header Social Icons Start -->
+            <div class="topbar-social-icons">
               <ul>
                 <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-clock"></i>
-                    <span>Working Hour:</span> 09:30am to 06:30pm</a
-                  >
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-envelope"></i>
-                    <span>Email:</span> shakeel@provantapharma.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- Topbar Contact Information End -->
-          </div>
-
-          <div class="col-lg-6 col-md-3">
-            <!-- Topbar Social Details Start -->
-            <div class="topbar-social-details">
-              <!-- Header Social Icons Start -->
-              <div class="topbar-social-icons">
-                <ul>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/Vetynexpharma/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Header Social Icons End -->
-
-              <!-- Topbar Contact Details Start -->
-              <div class="topbar-contact-info topbar-contact-details">
-                <ul>
-                  <li>
-                    <a href="#"><span>Contact:</span> +92-300-4355213</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Topbar Contact Details End -->
-            </div>
-            <!-- Topbar Social Details End -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Topbar Section End -->
-
-    <!-- Header Start -->
-    <header class="main-header">
-      <div class="header-sticky">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <!-- Logo Start -->
-            <a class="navbar-brand" href="index.html ">
-              <img
-                src="images/logo.jpg"
-                style="height: 70px; width: 200px"
-                alt="Logo"
-              />
-            </a>
-            <!-- Logo End -->
-
-            <!-- Main Menu Start -->
-            <div class="collapse navbar-collapse main-menu">
-              <div class="nav-menu-wrapper">
-                <ul class="navbar-nav mr-auto" id="menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item submenu">
-                    <a class="nav-link" href="">Products</a>
-                    <ul>
-                      <li class="nav-item submenu">
-                        <a class="nav-link" href="">Ruminants</a>
-                        <ul>
-                          <li class="nav-item">
-                            <a class="nav-link" href="Pharmaceutical.html"
-                              >Pharmaceutical Prouucts</a
-                            >
-                          </li>
-                          <li class="nav-item">
-                            <a
-                              class="nav-link"
-                              href="Nutraceutical-Products.html"
-                              >Nutraceutical Products</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Poultry.html">Poultry</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Feed.html"> Feed Additives</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item submenu">
-                    <a class="nav-link" href="">Partners</a>
-                    <ul>
-                      <li class="nav-item">
-                        <a class="nav-link" href="WinPharma.html">Win Pharma</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="APANano.html"
-                          >APA Nano United Technology</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="HubaiAtech.html"
-                          >Hubai Atech Biotechnology</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Guangdong.html"
-                          >Guangdong Xingtengke</a
-                        >
-                      </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="Provita.html">
-                          Provita Supplements</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Lacto.html">
-                          Lacto Production</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Eurovee.html">
-                          Eurovee Nutrition</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Aminorich.html"
-                          >Aminorich Nutrients B.V.</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="all-blogs.html">Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="image-gallery.html">Gallery</a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Header Button Start-->
-              <div class="header-btn">
-                <a href="contact.html" class="btn-default">Contact Us</a>
-              </div>
-              <!-- Header Button End-->
-            </div>
-            <!-- Main Menu End -->
-            <div class="navbar-toggle"></div>
-          </div>
-        </nav>
-        <div class="responsive-menu"></div>
-      </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Page Header Start -->
-    <div class="page-header bg-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Page Header Box Start -->
-            <div class="page-header-box">
-              <h1
-                class="text-anime-style-3"
-                data-cursor="-opaque"
-                id="post-title-heading"
-              >
-                Blog Details
-              </h1>
-            </div>
-            <!-- Page Header Box End -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Page Header End -->
-
-    <!-- Single Post Section Start -->
-    <div class="page-single-post">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Post Wrapper Start -->
-            <div id="post-wrapper">
-
-              <img id="post-image" style="height: 300px; margin-bottom: 50px;" src="" alt="" />
-
-              <div class="post-content">
-                <div class="post-entry" id="post-entry">
-                  <!-- Blog content generated here by js/blogs-data.js -->
-                </div>
-                <div class="row align-items-center">
-                  <div class="col-lg-7 col-md-6">
-                    <div class="post-tags">
-                      <div class="tag-links" id="post-tags">Tags:</div>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 col-md-6">
-                    <div class="post-social-sharing">
-                      <ul>
-                        <li>
-                          <a
-                            href="https://www.facebook.com/Vetynexpharma/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Facebook"
-                            ><i class="fa-brands fa-facebook-f"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title="Instagram"
-                            ><i class="fa-brands fa-instagram"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="#" title="Dribbble"
-                            ><i class="fa-brands fa-dribbble"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div style="margin-top: 30px; text-align: center">
-                  <a href="all-blogs.html" class="btn-default"
-                    >Back to All Blogs</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Post Wrapper End -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Single Post Section End -->
-
-    <footer class="main-footer bg-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-md-12">
-            <!-- About Footer Start -->
-            <div class="about-footer">
-              <!-- Footer Logo Start -->
-              <div class="footer-logo">
-                <img src="images/main/whitelogo.png" alt="" />
-              </div>
-              <!-- Footer Logo End -->
-
-              <!-- About Footer Content Start -->
-              <div class="about-footer-content" style="text-align: justify">
-                <p>
-                  Provanta Pharma is a leading Animal Health company in
-                  Pakistan, representing multiple trusted brands. We offer a
-                  comprehensive premium animal health and nutrition products
-                  designed to enhance the productivity and wellbeing of poultry
-                  and livestock. Our commitment to quality and and innovation
-                  has made us a trusted partner in the veterinary and livestock
-                  sectors.
-                </p>
-              </div>
-              <!-- About Footer Content End -->
-            </div>
-            <!-- About Footer End -->
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <!-- Footer Links Start -->
-            <div class="footer-links">
-              <h3>Partners</h3>
-              <ul>
-                <li><a href="WinPharma.html">Win Pharma</a></li>
-                <li><a href="APANano.html">APA Nano United Technology </a></li>
-                <li><a href="HubaiAtech.html">Hubai Atech Biotechnology</a></li>
-                <li><a href="Guangdong.html">Guangdong Xingtengke</a></li>
-                <li><a href="Provita.html"> Provita Supplements</a></li>
-                <li><a href="Lacto.html"> Lacto Production</a></li>
-                <li><a href="Eurovee.html"> Eurovee Nutrition</a></li>
-                <li><a href="Aminorich.html"> Aminorich Nutrients B.V.</a></li>
-              </ul>
-            </div>
-            <!-- Footer Links End -->
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <!-- Footer Links Start -->
-            <div class="footer-links">
-              <h3>quick links</h3>
-              <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="all-blogs.html">Blogs</a></li>
-                <li><a href="image-gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact US</a></li>
-              </ul>
-            </div>
-            <!-- Footer Links End -->
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <!-- Footer Contact Box Start -->
-            <div class="footer-contact-box footer-links">
-              <h3>contact us</h3>
-
-              <!-- Footer Contact Item Start -->
-              <div class="footer-contact-item">
-                <div class="icon-box">
-                  <img src="images/icon-mail.svg" alt="" />
-                </div>
-                <div class="footer-contact-content">
-                  <p>shakeel@provantapharma.com</p>
-                </div>
-              </div>
-              <!-- Footer Contact Item End -->
-
-              <!-- Footer Contact Item Start -->
-              <div class="footer-contact-item">
-                <div class="icon-box">
-                  <img src="images/icon-phone.svg" alt="" />
-                </div>
-                <div class="footer-contact-content">
-                  <p>+92-300-4355213</p>
-                </div>
-              </div>
-              <!-- Footer Contact Item End -->
-
-              <!-- Footer Contact Item Start -->
-              <div class="footer-contact-item">
-                <div class="icon-box">
-                  <img src="images/icon-location.svg" alt="" />
-                </div>
-                <div class="footer-contact-content">
-                  <p>242-Y, Phase III, Commercial Area, DHA Lahore-Pakistan.</p>
-                </div>
-              </div>
-              <!-- Footer Contact Item End -->
-            </div>
-            <!-- Footer Contact Box End -->
-          </div>
-
-          <div class="col-lg-12">
-            <!-- Footer Social Links Start -->
-            <div class="footer-social-link">
-              <hr />
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/Vetynexpharma/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://www.facebook.com/Vetynexpharma/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                 </li>
               </ul>
-              <hr />
             </div>
-            <!-- Footer Social Links End -->
-          </div>
-        </div>
+            <!-- Header Social Icons End -->
 
-        <!-- Footer Copyright Section Start -->
-        <div class="footer-copyright">
-          <div class="row align-items-center">
-            <div class="col-md-7">
-              <!-- Footer Copyright Start -->
-              <div class="footer-copyright-text">
-                <p>
-                  Provanta Pharma © Copyright 2025. All Rights Reserved I
-                  Proudly Designed By WebTeknes
-                </p>
-              </div>
-              <!-- Footer Copyright End -->
+            <!-- Topbar Contact Details Start -->
+            <div class="topbar-contact-info topbar-contact-details">
+              <ul>
+                <li>
+                  <a href="#"><span>Contact:</span> +92-300-4355213</a>
+                </li>
+              </ul>
             </div>
-
-            <div class="col-md-5">
-              <!-- Footer Terms Condition Start -->
-              <div class="footer-terms-condition">
-                <ul>
-                  <li><a href="#">privacy policy</a></li>
-                  <li><a href="#">terms & conditions</a></li>
-                </ul>
-              </div>
-              <!-- Footer Terms Condition End -->
-            </div>
+            <!-- Topbar Contact Details End -->
           </div>
+          <!-- Topbar Social Details End -->
         </div>
-        <!-- Footer Copyright Section End -->
       </div>
-    </footer>
+    </div>
+  </div>
+  <!-- Topbar Section End -->
 
-    <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Isotop js file -->
-    <script src="js/isotope.min.js"></script>
-    <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
-    <!-- Parallax js -->
-    <script src="js/parallaxie.js"></script>
-    <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
-    <script src="js/SplitText.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- Wow js file -->
-    <script src="js/wow.min.js"></script>
-    <!-- Blogs Data -->
-    <script src="js/blogs-data.js"></script>
-    <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
+  <!-- Header Start -->
+  <header class="main-header">
+    <div class="header-sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo Start -->
+          <a class="navbar-brand" href="index.html ">
+            <img src="images/logo.jpg" style="height: 70px; width: 200px" alt="Logo" />
+          </a>
+          <!-- Logo End -->
 
-    <script>
-      $(function () {
-        function getUrlParam(name) {
-          var params = new URLSearchParams(window.location.search);
-          return params.get(name);
+          <!-- Main Menu Start -->
+          <div class="collapse navbar-collapse main-menu">
+            <div class="nav-menu-wrapper">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="">Products</a>
+                  <ul>
+                    <li class="nav-item submenu">
+                      <a class="nav-link" href="">Ruminants</a>
+                      <ul>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Pharmaceutical.html">Pharmaceutical Prouucts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Nutraceutical-Products.html">Nutraceutical Products</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Poultry.html">Poultry</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Feed.html"> Feed Additives</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="">Partners</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="WinPharma.html">Win Pharma</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="APANano.html">APA Nano United Technology</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="HubaiAtech.html">Hubai Atech Biotechnology</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Guangdong.html">Guangdong Xingtengke</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="Provita.html">
+                        Provita Supplements</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Lacto.html">
+                        Lacto Production</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Eurovee.html">
+                        Eurovee Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Aminorich.html">Aminorich Nutrients B.V.</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="all-blogs.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="image-gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Header Button Start-->
+            <div class="header-btn">
+              <a href="contact.html" class="btn-default">Contact Us</a>
+            </div>
+            <!-- Header Button End-->
+          </div>
+          <!-- Main Menu End -->
+          <div class="navbar-toggle"></div>
+        </div>
+      </nav>
+      <div class="responsive-menu"></div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Page Header Start -->
+  <div class="page-header bg-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Page Header Box Start -->
+          <div class="page-header-box">
+            <h1 class="text-anime-style-3" data-cursor="-opaque" id="post-title-heading">
+              Blog Details
+            </h1>
+          </div>
+          <!-- Page Header Box End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- Single Post Section Start -->
+  <div class="page-single-post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Post Wrapper Start -->
+          <div id="post-wrapper">
+            <div class="row">
+
+              <!-- Post Text Column Start -->
+              <div class="col-lg-12 col-md-12">
+                <!-- Post Images Column Start -->
+                <div class="col-lg-12 col-md-12">
+                  <div class="blog-sidebar">
+                    <div class="blog-gallery" id="post-gallery">
+                      <!-- Blog images generated here by js/blogs-data.js -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Post Images Column End -->
+                <div class="post-content" style="margin-top: 50px;">
+                  <div class="post-entry" id="post-entry">
+                    <!-- Blog content generated here by js/blogs-data.js -->
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12">
+                      <div class="post-tags">
+                        <div class="tag-links" id="post-tags">Tags:</div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div style="margin-top: 30px; text-align: center">
+                    <a href="all-blogs.html" class="btn">Back to All Blogs</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Post Text Column End -->
+
+
+            </div>
+          </div>
+          <!-- Post Wrapper End -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Single Post Section End -->
+
+  <footer class="main-footer bg-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12">
+          <!-- About Footer Start -->
+          <div class="about-footer">
+            <!-- Footer Logo Start -->
+            <div class="footer-logo">
+              <img src="images/main/whitelogo.png" alt="" />
+            </div>
+            <!-- Footer Logo End -->
+
+            <!-- About Footer Content Start -->
+            <div class="about-footer-content" style="text-align: justify">
+              <p>
+                Provanta Pharma is a leading Animal Health company in
+                Pakistan, representing multiple trusted brands. We offer a
+                comprehensive premium animal health and nutrition products
+                designed to enhance the productivity and wellbeing of poultry
+                and livestock. Our commitment to quality and and innovation
+                has made us a trusted partner in the veterinary and livestock
+                sectors.
+              </p>
+            </div>
+            <!-- About Footer Content End -->
+          </div>
+          <!-- About Footer End -->
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <!-- Footer Links Start -->
+          <div class="footer-links">
+            <h3>Partners</h3>
+            <ul>
+              <li><a href="WinPharma.html">Win Pharma</a></li>
+              <li><a href="APANano.html">APA Nano United Technology </a></li>
+              <li><a href="HubaiAtech.html">Hubai Atech Biotechnology</a></li>
+              <li><a href="Guangdong.html">Guangdong Xingtengke</a></li>
+              <li><a href="Provita.html"> Provita Supplements</a></li>
+              <li><a href="Lacto.html"> Lacto Production</a></li>
+              <li><a href="Eurovee.html"> Eurovee Nutrition</a></li>
+              <li><a href="Aminorich.html"> Aminorich Nutrients B.V.</a></li>
+            </ul>
+          </div>
+          <!-- Footer Links End -->
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <!-- Footer Links Start -->
+          <div class="footer-links">
+            <h3>quick links</h3>
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="all-blogs.html">Blogs</a></li>
+              <li><a href="image-gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact US</a></li>
+            </ul>
+          </div>
+          <!-- Footer Links End -->
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <!-- Footer Contact Box Start -->
+          <div class="footer-contact-box footer-links">
+            <h3>contact us</h3>
+
+            <!-- Footer Contact Item Start -->
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <img src="images/icon-mail.svg" alt="" />
+              </div>
+              <div class="footer-contact-content">
+                <p>shakeel@provantapharma.com</p>
+              </div>
+            </div>
+            <!-- Footer Contact Item End -->
+
+            <!-- Footer Contact Item Start -->
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <img src="images/icon-phone.svg" alt="" />
+              </div>
+              <div class="footer-contact-content">
+                <p>+92-300-4355213</p>
+              </div>
+            </div>
+            <!-- Footer Contact Item End -->
+
+            <!-- Footer Contact Item Start -->
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <img src="images/icon-location.svg" alt="" />
+              </div>
+              <div class="footer-contact-content">
+                <p>242-Y, Phase III, Commercial Area, DHA Lahore-Pakistan.</p>
+              </div>
+            </div>
+            <!-- Footer Contact Item End -->
+          </div>
+          <!-- Footer Contact Box End -->
+        </div>
+
+        <div class="col-lg-12">
+          <!-- Footer Social Links Start -->
+          <div class="footer-social-link">
+            <hr />
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/Vetynexpharma/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+            <hr />
+          </div>
+          <!-- Footer Social Links End -->
+        </div>
+      </div>
+
+      <!-- Footer Copyright Section Start -->
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <!-- Footer Copyright Start -->
+            <div class="footer-copyright-text">
+              <p>
+                Provanta Pharma © Copyright 2025. All Rights Reserved I
+                Proudly Designed By WebTeknes
+              </p>
+            </div>
+            <!-- Footer Copyright End -->
+          </div>
+
+          <div class="col-md-5">
+            <!-- Footer Terms Condition Start -->
+            <div class="footer-terms-condition">
+              <ul>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">terms & conditions</a></li>
+              </ul>
+            </div>
+            <!-- Footer Terms Condition End -->
+          </div>
+        </div>
+      </div>
+      <!-- Footer Copyright Section End -->
+    </div>
+  </footer>
+
+  <!-- Jquery Library File -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap js file -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Validator js file -->
+  <script src="js/validator.min.js"></script>
+  <!-- SlickNav js file -->
+  <script src="js/jquery.slicknav.js"></script>
+  <!-- Swiper js file -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- Counter js file -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <!-- Isotop js file -->
+  <script src="js/isotope.min.js"></script>
+  <!-- Magnific js file -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- SmoothScroll -->
+  <script src="js/SmoothScroll.js"></script>
+  <!-- Parallax js -->
+  <script src="js/parallaxie.js"></script>
+  <!-- MagicCursor js file -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/magiccursor.js"></script>
+  <!-- Text Effect js file -->
+  <script src="js/SplitText.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <!-- YTPlayer js File -->
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <!-- Wow js file -->
+  <script src="js/wow.min.js"></script>
+  <!-- Blogs Data -->
+  <script src="js/blogs-data.js"></script>
+  <!-- Main Custom js file -->
+  <script src="js/function.js"></script>
+
+  <script>
+    $(function () {
+      function getUrlParam(name) {
+        var params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+
+      var id = parseInt(getUrlParam("id"), 10);
+      if (isNaN(id) && BLOGS.length) {
+        id = BLOGS[0].id;
+      }
+      var blog = null;
+      $.each(BLOGS, function (index, item) {
+        if (item.id === id) {
+          blog = item;
+          return false;
         }
-
-        var id = parseInt(getUrlParam("id"), 10);
-        var blog = null;
-        $.each(BLOGS, function (index, item) {
-          if (item.id === id) {
-            blog = item;
-            return false;
-          }
-        });
-
-        if (!blog) {
-          $("#post-wrapper").html(
-            '<div style="text-align:center; padding:60px 0;">' +
-              "<h2>Blog Not Found</h2>" +
-              "<p>Sorry, the blog you are looking for does not exist.</p>" +
-              '<div style="margin-top:20px;">' +
-              '<a href="all-blogs.html" class="btn-default">Back to All Blogs</a>' +
-              "</div>" +
-              "</div>",
-          );
-          return;
-        }
-
-        document.title = "Proventa Pharma - " + blog.title;
-        $("#post-title-heading").text(blog.title);
-        $("#post-title-breadcrumb").text(blog.title);
-        $("#post-image").attr("src", blog.image);
-        $("#post-image").attr("alt", blog.title);
-
-        var html = "";
-        $.each(blog.content, function (index, block) {
-          if (block.type === "h2") {
-            html += "<h2>" + block.text + "</h2>";
-          } else if (block.type === "blockquote") {
-            html += "<blockquote><p>" + block.text + "</p></blockquote>";
-          } else if (block.type === "ul") {
-            html += "<ul>";
-            $.each(block.items, function (i, item) {
-              html += "<li>" + item + "</li>";
-            });
-            html += "</ul>";
-          } else {
-            html += "<p>" + block.text + "</p>";
-          }
-        });
-        $("#post-entry").html(html);
-
-        var tagsHtml = "Tags:";
-        $.each(blog.tags, function (index, tag) {
-          tagsHtml += ' <a href="all-blogs.html">' + tag + "</a>";
-        });
-        $("#post-tags").html(tagsHtml);
       });
-    </script>
-  </body>
+
+      if (!blog) {
+        $("#post-wrapper").html(
+          '<div style="text-align:center; padding:60px 0;">' +
+          "<h2>Blog Not Found</h2>" +
+          "<p>Sorry, the blog you are looking for does not exist.</p>" +
+          '<div style="margin-top:20px;">' +
+          '<a href="all-blogs.html" class="btn-default">Back to All Blogs</a>' +
+          "</div>" +
+          "</div>",
+        );
+        return;
+      }
+
+      document.title = "Proventa Pharma - " + blog.title;
+      $("#post-title-heading").text(blog.title);
+      $("#post-title-breadcrumb").text(blog.title);
+
+      var galleryHtml = "";
+      $.each(blog.gallery, function (index, img) {
+        galleryHtml +=
+          '<a href="' +
+          img +
+          '" data-cursor-text="View">' +
+          '<img src="' +
+          img +
+          '" alt="' +
+          blog.title +
+          '" />' +
+          "</a>";
+      });
+      $("#post-gallery").html(galleryHtml);
+
+      $("#post-gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+          enabled: true,
+        },
+        image: {
+          verticalFit: true,
+        },
+        zoom: {
+          enabled: true,
+          duration: 300,
+          opener: function (element) {
+            return element.find("img");
+          },
+        },
+      });
+
+      var html = "";
+      $.each(blog.content, function (index, block) {
+        if (block.type === "h2") {
+          html += "<h2>" + block.text + "</h2>";
+        } else if (block.type === "blockquote") {
+          html += "<blockquote><p>" + block.text + "</p></blockquote>";
+        } else if (block.type === "ul") {
+          html += "<ul>";
+          $.each(block.items, function (i, item) {
+            html += "<li>" + item + "</li>";
+          });
+          html += "</ul>";
+        } else {
+          html += "<p>" + block.text + "</p>";
+        }
+      });
+      $("#post-entry").html(html);
+
+      var tagsHtml = "Tags:";
+      $.each(blog.tags, function (index, tag) {
+        tagsHtml += ' <a href="all-blogs.html">' + tag + "</a>";
+      });
+      $("#post-tags").html(tagsHtml);
+    });
+  </script>
+</body>
+
 </html>
